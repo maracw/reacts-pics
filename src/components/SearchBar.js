@@ -6,9 +6,8 @@ function SearchBar ({onSubmit}) {
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
-        //DON'T DO THIS WAY
-        //const term = document.getElementById('searchInput').value;
-        //onSubmit(document.querySelector('input').value);
+
+        onSubmit(term);
     };
 
     const handleChange = (event) => {
